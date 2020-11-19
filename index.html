@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>SMS Kiosk</title>
+        <style>
+          body {
+            background-color: black;
+            color: white;
+            margin: 0;
+          }
+
+          .messages {
+            font-size: 48px;
+            margin: 0.2em;
+          }
+
+          .clock {
+            font-size: 48px;
+            width: 100%;
+            text-align: center;
+            height: 80px;
+          }
+
+          .message-list {
+              height: calc(30% - 82px);
+              overflow: auto;
+          }
+
+          .sender {
+            font-size: 48px;
+            margin-right: 1em;
+          }
+
+          .photos {
+            height: 70%;
+            background-color: black;
+            text-align: center;
+          }
+
+          .flash {
+            background-color: white;
+          }
+
+          img.image {
+            height: 100%;
+          }
+
+        </style>
+    </head>
+    <body>
+        <div class="clock"></div>
+        <div class="message-list"></div>
+        <div class="loading">
+            Loading...
+        </div>
+        <div class="photos"></div>
+    </body>
+    <script src="./sms-view.js"></script>
+</html>
