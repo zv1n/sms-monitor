@@ -5,7 +5,6 @@ let numbers = require('./numbers.json');
 let images = require('./images.json');
 
 function smsData(messages){
-    jquery(".loading").remove();
     jquery(".messages").remove();
     for ( let x in messages ) {
         if ( jquery(".messages#" + messages[x].sid).length == 0) {
